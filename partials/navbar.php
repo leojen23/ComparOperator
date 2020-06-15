@@ -22,7 +22,8 @@
     </div>
   </nav>
    
-  <div></div>
+ 
+  <div>
   <ul class="sidenav" id="mobile-demo">
     <li><a href="../views/operators.php">Canada</a></li>
     <li><a href="../views/operators.php">Congo</a></li>
@@ -35,5 +36,6 @@
     <li><a href="../views/operators.php">Madagascar</a></li>
     <li><a href="../views/operators.php">Russie</a></li>
   </ul>
+  </div>
   
 </header>

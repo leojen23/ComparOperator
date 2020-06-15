@@ -7,7 +7,7 @@
 <!-- Navbar--------------------------------------------------- -->
 <?php include "../partials/navbar.php"?>
 
-<?php include "../partials/banner.php"?>
+<?php include "../partials/parallax.php"?>
 
 
 
