@@ -1,6 +1,6 @@
 <header>
   <div class="navbar-fixed">
-    <nav class="navbar-fixed">
+    <nav>
       <div class="nav-wrapper ">
         <a href="#" class="brand-logo center">Logo</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
