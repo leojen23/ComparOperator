@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "mixins.scss";
 @import "components/carousel.scss";
 @import "components/destinationCard.scss";
 @import "components/footer.scss";
@@ -9,6 +10,5 @@
 @import "components/sidebar.scss";
 @import "components/buttons.scss";
 
-h1{
-    color:red;
-}
+
+
