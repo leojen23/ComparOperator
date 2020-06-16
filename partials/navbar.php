@@ -13,7 +13,7 @@
         <li><a href="../views/operators.php">Irlande</a></li>
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="../views/operators.php">Island</a></li>
+        <li><a href="../views/operators.php" class>Island</a></li>
         <li><a href="../views/operators.php">Italie</a></li>
         <li><a href="../views/operators.php">Japon</a></li>
         <li><a href="../views/operators.php">Madagascar</a></li>
