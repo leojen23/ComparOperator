@@ -12,12 +12,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- link to font library -->
+    <!-- font card title destinations -->
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
 
      <!-- Compiled and minified Materialize CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Link to compiled CSS stylesheet -->
-     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>

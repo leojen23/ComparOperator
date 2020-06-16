@@ -1,9 +1,28 @@
+.card-destination {
+  font-family: "Satisfy", cursive, "roboto";
+}
+
+.socials-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+
+.socials-icons a {
+  color: white;
+}
+
+.email {
+  font-size: 1.2rem;
+}
+
 div .chip {
   color: black;
 }
 
 h3 {
-  text-align: center !important;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

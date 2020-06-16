@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/style.scss"],"names":[],"mappings":"AAaI;EACI;;;AAGR;EACI","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/components/destinationCard.scss","../scss/components/footer.scss","../scss/style.scss"],"names":[],"mappings":"AAEA;EAEI;;;ACJJ;EACI;EACA;EACA;EACA;;;AAGA;EACI;;;AAGR;EACI;;;ACCA;EACI;;;AAGR;EACI","file":"style.css"}
