@@ -3,7 +3,7 @@
 @import "components/carousel.scss";
 @import "components/destinationCard.scss";
 @import "components/footer.scss";
-@import "components/banner.scss";
+@import "components/parallax.scss";
 @import "components/modal.scss";
 @import "components/navbar.scss";
 @import "components/operatorCard.scss";
@@ -14,4 +14,7 @@ div{
     .chip{
         color:black;
     }
+}
+h3{
+    text-align: center;
 }
