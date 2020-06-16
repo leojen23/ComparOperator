@@ -12,3 +12,7 @@
 @import "components/buttons.scss";
 
 
+.checkbox.container{
+    display: flex;
+    justify-content: space-evenly;
+}
