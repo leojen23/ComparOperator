@@ -9,7 +9,7 @@
             <div class="card horizontal z-depth-4 card-operator">
                 
                 <div class="card-image">
-                    <img src="https://ph-files.imgix.net/aae4b5bd-f69b-43ba-8d5b-10d5bf79c32f.gif?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=120&h=120&fit=crop">
+                    <img style="height:100%" src="../assets/images/logos/test.gif">
                 </div>
 
 
