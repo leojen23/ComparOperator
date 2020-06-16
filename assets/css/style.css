@@ -1,18 +1,39 @@
-/* Error: expected selector.
- *   ,
- * 1 | <<<<<<< HEAD
- *   | ^
- *   '
- *   assets/scss/components/operatorCard.scss 1:1  @import
- *   assets/scss/style.scss 10:9                   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected selector.\a   \2577 \a 1 \2502  <<<<<<< HEAD\a   \2502  ^\a   \2575 \a   assets/scss/components/operatorCard.scss 1:1  @import\a   assets/scss/style.scss 10:9                   root stylesheet";
+.card-destination {
+  font-family: "Satisfy", cursive, "roboto";
 }
+
+.socials-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+
+.socials-icons a {
+  color: white;
+}
+
+.email {
+  font-size: 1.2rem;
+}
+
+.card-operator {
+  color: blue;
+}
+
+.card-content-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-action-container {
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
