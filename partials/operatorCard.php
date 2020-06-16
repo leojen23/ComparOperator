@@ -1,8 +1,5 @@
 
 
-
-
-
 <?php for ($i=0; $i < 6 ; $i++):?>
 
     <div class="col s12 m8">
