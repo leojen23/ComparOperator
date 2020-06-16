@@ -10,7 +10,7 @@
                     <a href="./views/operators.php" class="btn-floating btn-large pulse halfway-fab waves-effect waves-light red"><i class="material-icons">flight</i></a>
                 
                 </div>
-                <h6 class="card-title center-align ">Japan</h6> 
+                <h6 class="card-title card-destination center-align">Japan</h6> 
             </div>
         <?php endfor;?>
     </div>
