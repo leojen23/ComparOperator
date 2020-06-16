@@ -1,26 +1,22 @@
 
-  console.log("yo");
+// Parallax start--------------------------------------------------------------------
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.parallax');
     var instances = M.Parallax.init(elems, null);
   });
-// sidenav Js Vf
+
+// Parallax end--------------------------------------------------------------------
+
+
+// Sidenav start--------------------------------------------------------------------
+
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, null);
   });
-// carousel vf
-//   document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('.carousel');
-//     var instances = M.Carousel.init(elems,null);
-//   });
 
 
-//  var instance = M.Carousel.init({
-//     fullWidth: true
-      
-//   });
   $(document).ready(function(){
     $('.carousel').carousel();
 
@@ -31,19 +27,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   });
 
-
-// function for auto play carousel-slider
-
+// Sidenav end--------------------------------------------------------------------
 
 
   // Review Modal start ---------------------------------------------------------
-
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems);
+    var instances = M.Modal.init(elems, null);
   });
 
   var instance = M.Modal.getInstance(elem);
+
 
    // Review Modal end ---------------------------------------------------------
 
