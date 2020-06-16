@@ -8,8 +8,7 @@
         <li><a href="../views/operators.php">Canada</a></li>
         <li><a href="../views/operators.php">Congo</a></li>
         <li><a href="../views/operators.php">Croatie</a></li>
-        <li><a href=
-        "../views/operators.php">Espagne</a></li>
+        <li><a href="../views/operators.php">Espagne</a></li>
         <li><a href="../views/operators.php">Irlande</a></li>
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">

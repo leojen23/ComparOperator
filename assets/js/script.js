@@ -40,4 +40,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
    // Review Modal end ---------------------------------------------------------
-
+//  tabs administrator
+ var instance = M.Tabs.init(el, onShow);

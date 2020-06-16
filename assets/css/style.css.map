@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/components/operatorCard.scss"],"names":[],"mappings":"AAAA;EACI;;;AAGJ;EACI;EACA;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EAII","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/components/destinationCard.scss","../scss/components/footer.scss","../scss/components/operatorCard.scss"],"names":[],"mappings":"AAEA;EAEI;;;ACJJ;EACI;EACA;EACA;EACA;;;AAGA;EACI;;;AAGR;EACI;;;ACZJ;EACI;;;AAGJ;EACI;EACA;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EAII","file":"style.css"}
