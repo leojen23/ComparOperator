@@ -10,7 +10,7 @@
     </div>
 
     <div class="row">
-      <?php include "operatorCard.php"?>
+      <?php include "../partials/operatorCard.php"?>
     </div>
 </div>
 
