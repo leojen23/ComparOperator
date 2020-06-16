@@ -1,0 +1,21 @@
+.card-operator{
+    color: blue;
+}
+
+.card-content-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-buttons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-action-container{
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    background-color:red;
+}
