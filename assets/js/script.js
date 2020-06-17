@@ -31,13 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Review Modal start ---------------------------------------------------------
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, null);
-  });
-
   
-
+  
+$(document).ready(function(){
+  $('.modal').modal();
+});
 
    // Review Modal end ---------------------------------------------------------
 

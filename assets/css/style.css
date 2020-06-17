@@ -17,6 +17,23 @@
   font-size: 1.2rem;
 }
 
+.modal {
+  text-align: center;
+  width: 70%;
+}
+.modal-header {
+  color: white;
+  padding: 1.5rem;
+}
+.modal-content {
+  background-color: lightgrey;
+  height: 100%;
+}
+.modal-form {
+  padding: 1rem;
+  color: white;
+}
+
 .card-operator {
   color: blue;
 }
@@ -34,6 +51,11 @@
 
 .card-action-container {
   background-color: red;
+}
+
+.checkbox.container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+.modal{
+    text-align: center;
+    width: 70%;
+
+    &-header{
+        color: white;
+        padding: 1.5rem;
+        
+    }
+    &-content{
+        background-color:lightgrey;
+        height: 100%;
+        
+    }
+    &-form{
+        padding: 1rem;
+        color: white;
+    }
+}

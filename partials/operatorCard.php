@@ -2,14 +2,14 @@
 
 <?php for ($i=0; $i < 6 ; $i++):?>
 
-    <div class="col s12 m8">
+    <div class="col s12 m12">
 
         <div class="card">
     
             <div class="card horizontal z-depth-4 card-operator">
                 
                 <div class="card-image">
-                    <img style="height:100%" src="../assets/images/logos/test.gif">
+                    <img  src="../assets/images/logos/Intrepid.png">
                 </div>
 
 
