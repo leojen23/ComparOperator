@@ -46,3 +46,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var elem = document.querySelector('.tabs');
      var options = {}
      var instance = M.Tabs.init(elem, options);
+
+// init forms destination select--------------------------------------------------
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, null);
+  });

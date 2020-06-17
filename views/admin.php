@@ -3,26 +3,24 @@
 <a href="../index.php" class="brand-logo center">Logo</a>
 <body>
 
- <div class="row">
+<div class="row">
 
 
  <!-- TAB ------------------------------------------ -->
     <div class="col s12">
       <ul class="tabs">
         <li class="tab active col s4"><a href="#test1">Ajouter un Tour Opérateur</a></li>
-        <li class="tab active col s4"><a  href="#test2">Statut du tour opérateur</a></li>
-        <li class="tab active col s4"><a href="#test4">Ajouter une Destination</a></li>
+        <li class="tab active col s4"><a href="#test2">Ajouter une Destination</a></li>
+        <li class="tab active col s4"><a href="#test3">Modifier l'abonnement du Tour Opérateur</a></li>
       </ul>
     </div>
 
 
-
-
-
+  <!-- operator---------------------------------------------------------------------- -->
     <div id="test1" class="col s12">
         <div class="row">
           <div class="container">
-            <form class="col s12">
+            <form action="adminForm.php" method="POST" class="col s12">
               <div class="row">
 
                 <div class="input-field col s12">
@@ -72,7 +70,7 @@
 
 
               <div>
-                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
                 <i class="material-icons right">send</i>
               </button>
               </div>
@@ -87,13 +85,128 @@
 
 
 
+  <!-- destinations --------------------------------------------------------------------->
+    <div id="test2" class="col s12">
+      <div class="row">
+        <div class="container">
+          <form action="adminForm.php" method="POST" class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Choisissez l'identifiant de l'opérateur </option>
+                  <option name="id_operator_destination" value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label>Numéro Tour opérateur</label>
+              </div>
+
+              <div class="input-field col s12">
+                <input id="name" name="location" type="text" class="validate">
+                <label for="name">Destination</label>
+              </div>
+              
+              <div class="input-field col s12">
+                <input id="grade" name="price" type="text" class="validate">
+                <label for="Grade">Prix</label>
+              </div>
+
+              
+              <div class = "file-field input-field col s12">
+                <div class = "btn">
+                    <span>Image destination</span>
+                    <input type ="file" />
+                </div>
+                
+                <div class = "file-path-wrapper"> 
+                    <input class = "file-path validate" type = "text" placeholder="Image Destination" name="cardpic"/>
+                </div>
+              </div>
+              <div class = "file-field input-field col s12">
+                <div class = "btn">
+                    <span>Image Parallax1</span>
+                    <input type ="file" />
+                </div>
+                
+                <div class = "file-path-wrapper"> 
+                    <input class = "file-path validate" type = "text" placeholder="Image Parallax1" name="parallax_1"/>
+                </div>
+              </div>
+              <div class = "file-field input-field col s12">
+                <div class = "btn">
+                  <span>Image Parallax2</span>
+                  <input type ="file" />
+                </div>
+                
+                <div class = "file-path-wrapper"> 
+                    <input class = "file-path validate" type = "text" placeholder="Image Parallax2" name="parallax_2"/>
+                </div>
+              </div>
+
+              
+              <div>
+                <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div> 
+      </div>
+ 
+    </div>
 
 
-
-    <div id="test2" class="col s12">Test 2</div>
-    <div id="test3" class="col s12">Test 3</div>
-    
+  <!-- modification abonnement --------------------------------------------------------------------->
+  <div id="test3" class="col s12">
+    <div class="row">
+        <div class="container">
+          <form action="adminForm.php" method="POST" class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Choisissez votre tour opérateur </option>
+                  <option name="id_operator_destination" value="easy jet">Easy jet</option>
+                  <option value="toto">toto</option>
+                  <option value="tata">tata</option>
+                </select>
+                <label>Nom du Tour opérateur</label>
+              </div>
+              <div>
+                <input type="hidden"name="idoperator">
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col s12 m5">
+                <div class="card-panel teal grey">
+                  <input type="text" name="status">
+                  <label for="typestatus">affiche le statut actuel</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>Devenir premium </option>
+                    <option name="id_operator_destination" value="easy jet">Premium</option>
+                    
+                  </select>
+                  <label>Nom du Tour opérateur</label>
+              </div>
+            </div>
+            <div>
+              <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+              </button>
+            </div>
+         
+          </form>
+        </div>
+    </div>
   </div>
+    
+</div>
         
 
 
