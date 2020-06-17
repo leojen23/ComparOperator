@@ -11,7 +11,9 @@
 @import "components/sidebar.scss";
 @import "components/buttons.scss";
 
-
+body{
+    background-color: lightgray;
+}
 .checkbox.container{
     display: flex;
     justify-content: space-evenly;
