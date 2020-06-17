@@ -30,15 +30,19 @@ document.addEventListener('DOMContentLoaded', function() {
 // Sidenav end--------------------------------------------------------------------
 
 
-  // Review Modal start ---------------------------------------------------------
+// Review Modal start ---------------------------------------------------------
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems, null);
   });
 
-  var instance = M.Modal.getInstance(elem);
+  
 
 
    // Review Modal end ---------------------------------------------------------
-//  tabs administrator
- var instance = M.Tabs.init(el, onShow);
+
+// init materialize tab---------------------------------------------------------
+
+    var elem = document.querySelector('.tabs');
+     var options = {}
+     var instance = M.Tabs.init(elem, options);

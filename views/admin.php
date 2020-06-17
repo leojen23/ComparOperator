@@ -9,9 +9,9 @@
  <!-- TAB ------------------------------------------ -->
     <div class="col s12">
       <ul class="tabs">
-        <li class="tab col s4"><a href="#test1">Ajouter un Tour Opérateur</a></li>
-        <li class="tab col s4"><a  href="#test2">Statut du tour opérateur</a></li>
-        <li class="tab col s4"><a href="#test4">Ajouter une Destination</a></li>
+        <li class="tab active col s4"><a href="#test1">Ajouter un Tour Opérateur</a></li>
+        <li class="tab active col s4"><a  href="#test2">Statut du tour opérateur</a></li>
+        <li class="tab active col s4"><a href="#test4">Ajouter une Destination</a></li>
       </ul>
     </div>
 
@@ -92,15 +92,10 @@
 
     <div id="test2" class="col s12">Test 2</div>
     <div id="test3" class="col s12">Test 3</div>
-    <div id="test4" class="col s12">Test 4</div>
+    
   </div>
         
-<div class="row">
-    <div class="col s12">
-        
-    </div>
-   
-</div>
+
 
   
         
