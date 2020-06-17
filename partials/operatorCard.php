@@ -9,7 +9,7 @@
             <div class="card horizontal z-depth-4 card-operator">
                 
                 <div class="card-image">
-                    <img style="height:100%" src="../assets/images/logos/test.gif">
+                    <img  src="../assets/images/logos/Intrepid.png">
                 </div>
 
 
