@@ -2,7 +2,7 @@
 
 <?php for ($i=0; $i < 6 ; $i++):?>
 
-    <div class="col s12 m8">
+    <div class="col s12 m12">
 
         <div class="card">
     
