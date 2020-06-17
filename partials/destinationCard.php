@@ -11,7 +11,7 @@
             <div class="card col s12 m4 offset-m1">
                 
                 <div class="card-image small">
-                    <img src="../assets/images/cards/<?=$card["card_pic"]?>">
+                    <img id="imgcard" src="../assets/images/cards/<?=$card["card_pic"]?>">
                                            
                     <a href="./views/operators.php?destinationName=<?=$card["location"]?>" class="btn-floating btn-large pulse halfway-fab waves-effect waves-light red"><i class="material-icons">flight</i></a>
                 
