@@ -1,6 +1,5 @@
-
-<div class="row">
-    <div class="container">  
+<div class="container"> 
+    <div class="row">
         <?php for ($i=1;$i<=12;$i++):?>
             <div class="card col s12 m4 offset-m1">
                 
