@@ -1,3 +1,33 @@
+<?php  
+
+require '../helpers/init.php';
+
+// include "../helpers/autoload.php";
+
+
+function loadClass($classe)
+{
+    require_once ('../entities/'.$classe.'.php') ;
+    
+}
+spl_autoload_register('loadClass');
+
+$DestinationsManager = new DestinationsManager($db);
+
+
+
+if(!empty($_GET["destinationName"])){
+    
+    $location = $_GET["destinationName"];
+    $destinationDisplay = $DestinationsManager->getOperatorPageDisplayContent($_GET["destinationName"]);
+}
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 
