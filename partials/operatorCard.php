@@ -16,7 +16,7 @@
       }?>
     
 
-    <div class="col s12 m12">
+    <div class=" container col s12 ">
 
         <div class="card">
     
