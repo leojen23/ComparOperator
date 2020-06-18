@@ -1,3 +1,7 @@
+.carousel .carousel-item > img {
+  height: 100%;
+}
+
 .card-destination {
   font-family: "Satisfy", cursive, "roboto";
 }
