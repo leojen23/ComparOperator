@@ -10,24 +10,30 @@ class DestinationsManager extends Manager
 
   public function getDestinationsCardContent()
   {
+    $destinationCards = [];
     $request = $this->getDb()->query("SELECT
-                                    `id`,
-                                    `location`,
-                                    `card_pic`,
-                                    `id_tour_operator`
+                                    *
                                 FROM
                                     `destinations`
                                 GROUP BY `location`");
 
-    $destinationsCardContent = $request->fetchAll(PDO::FETCH_ASSOC);
-    return $destinationsCardContent;
+    while($destinationsCardContent = $request->fetch(PDO::FETCH_ASSOC)){
+
+     array_push($destinationCards, new Destination($destinationsCardContent)) ;
+
+    };
+    return $destinationCards;
+    
 
     // $destinationsCardContent->getLocation();
 
   }
+
+
   public function getOperatorPageDisplayContent($location)
   {
-    // $location='canada';
+    // $destinationInfos =[];
+    
     $request = $this->getDb()->prepare("SELECT
                                       `location`, 
                                       `parallax_1`, 
@@ -40,10 +46,16 @@ class DestinationsManager extends Manager
     $request->bindValue(':location',$location, PDO::PARAM_STR);
     $request->execute();
 
-    $destinationDisplayInfos = $request->fetch(PDO::FETCH_ASSOC);
+    while($destinationDisplayInfos = $request->fetch(PDO::FETCH_ASSOC)){
+      
+     return new Destination ($destinationDisplayInfos);
+      
+    };
 
-    
-    return $destinationDisplayInfos;
+    // var_dump($destinationInfos);
+    // return $destinationInfos;
+   
+    // var_dump($destinationInfos);
     
 
   }

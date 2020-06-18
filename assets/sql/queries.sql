@@ -19,6 +19,18 @@ FROM
 WHERE `location` = "Canada"
 
 
+-- get tour operator details for a destination
+SELECT
+    *
+FROM
+    `tour_operators`
+INNER JOIN `destinations`
+
+ON tour_operators.id = destinations.id_tour_operator
+WHERE location = "Canada"
+    
+
+
 
 
 

@@ -1,6 +1,20 @@
 
 
-<?php for ($i=0; $i < 6 ; $i++):?>
+<?php foreach($offers as $offer):
+    ?>
+
+    <?php switch ($offer->getIs_premium())
+      {
+        case 0:
+          
+          $link = "";
+        break;
+        case 1:
+          
+          $link = "hide";
+        break;
+      }?>
+    
 
     <div class="col s12 m12">
 
@@ -8,8 +22,8 @@
     
             <div class="card horizontal z-depth-4 card-operator">
                 
-                <div class="card-image">
-                    <img  src="../assets/images/logos/Intrepid.png">
+                <div class="card-image operator-logo">
+                    <img  src="../assets/images/logos/<?= $offer->getLogo()?>">
                 </div>
 
 
@@ -18,20 +32,21 @@
 
 
                         <div class="card-content-header">
-                            <span class="card-title card-operator">EasyJet</span>
-                            <span class="card-span">Prix :190</span>
+                            <span class="card-title card-operator"><?= $offer->getName()?></span>
+                            <span class="card-span"><?= $offer->getPrice()?> Euros</span>
                         </div>
                         
-
                         <div class="card-buttons-container">
                             <div class="star-grading">
-                                <i class="small material-icons">star_border</i>
-                                <i class="small material-icons">star_border</i>
-                                <i class="small material-icons">star_border</i>
-                                <i class="small material-icons">star_border</i>
-                                <i class="small material-icons">star_border</i>
+                                <span><?= $offer->getGrade()?>/5</span>
                             </div>
-                            <span class="new badge" data-badge-caption="Premium"></span>
+                            
+                            <!-- <span class="new badge <?= $btnColor?>" data-badge-caption=<?=$btnText?>></span> -->
+                        </div>
+
+                        <div class="card-content-header">
+                       
+                            <a href="<?= $offer->getLink()?>"><span class="card-span <?= $link?>"><?= $offer->getLink()?></span></a>
                         </div>
                     </div>
                 </div> 
@@ -46,4 +61,4 @@
         </div>
     </div>
 
-<?php endfor;?>
+<?php endforeach;?>

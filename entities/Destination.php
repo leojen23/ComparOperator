@@ -1,6 +1,6 @@
 <?php
 
-abstract class Destination
+class Destination
 {
   private   $id,
             $location,
@@ -37,7 +37,6 @@ abstract class Destination
     {
     return $this->id;
     }
-
   public function getLocation()
     {
       return $this->location;
@@ -82,7 +81,7 @@ abstract class Destination
     }
   }
 
-  public function setDate(string $card_pic)
+  public function setCard_pic(string $card_pic)
   {
     if(is_string($card_pic))
     {
