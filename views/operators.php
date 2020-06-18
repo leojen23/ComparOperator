@@ -13,17 +13,17 @@ function loadClass($classe)
 spl_autoload_register('loadClass');
 
 $DestinationsManager = new DestinationsManager($db);
-
+$OperatorsManager = new OperatorsManager($db);
+$OffersManager = new OffersManager($db);
 
 
 if(!empty($_GET["destinationName"])){
     
     $location = $_GET["destinationName"];
-    $destinationDisplay = $DestinationsManager->getOperatorPageDisplayContent($_GET["destinationName"]);
+    $destinationDisplay = $DestinationsManager->getOperatorPageDisplayContent($location);
+    $offers = $OffersManager->getAllOffers($location);
+    // $operatorsDisplay = $OperatorsManager->getOperatorListForADestination($location);
 }
-
-
-
 ?>
 
 
@@ -38,11 +38,6 @@ if(!empty($_GET["destinationName"])){
 <?php include "../partials/navbar.php"?>
 
 <?php include "../partials/parallax.php"?>
-
-
-
-
-
 
 
 
