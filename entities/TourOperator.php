@@ -1,7 +1,7 @@
 <?php
 
 
-abstract class TourOpertor
+ class TourOperator
 {
   private   $id,
             $name,
@@ -18,8 +18,6 @@ abstract class TourOpertor
   }
   
 
-  
-  
   public function hydrate(array $data)
   {
     foreach ($data as $key => $value)
@@ -32,6 +30,7 @@ abstract class TourOpertor
       }
     }
   }
+
   
 
   // GETTERS //
