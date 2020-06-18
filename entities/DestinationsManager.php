@@ -2,12 +2,33 @@
 
 class DestinationsManager extends Manager
 {
-
-    public function addDestination($destination)
+  // crud
+     public function addDestination($Destination)
   {
-
+   
+    $request = $this->db->prepare('INSERT INTO destinations (location, price,card_pic,  parallax_1,parallax_2,id_tour_operator) 
+                                  VALUES(:location, :price,:card_pic,:parallax_1,:parallax_2,:id_tour_operator)');
+    $request->bindValue(':location', $Destination->getLocation());
+    $request->bindValue(':price', $Destination->getPrice());
+    $request->bindValue(':card_pic', $Destination->getCard_pic());
+    $request->bindValue(':parallax_1', $Destination->getParallax_1());
+    $request->bindValue(':parallax_2', $Destination->getParallax_2());
+    $request->bindValue(':id_tour_operator', $Destination->getId_tour_operator());
+    $request->execute();
+    
+    // $Destination->hydrate([
+    //   'id' => $this->db->lastInsertId(),
+    //   'location' => ,
+    //   'price' => ,
+    //   'card_pic' => ,
+    //   'parallax_1' => ,
+    //   'parallax_2' => ,
+    //   'id_tour_operator' => ,
+    // ]);
   }
 
+
+  // method
   public function getDestinationsCardContent()
   {
     $destinationCards = [];

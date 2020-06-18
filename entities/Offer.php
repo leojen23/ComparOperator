@@ -16,22 +16,7 @@ class Offer
         $this->hydrate($data);
     }
 
-    // public function checkMembership(){
-    //   switch ($this->getIs_premium())
-    //   {
-    //     case 0:
-    //       $btnColor = "red";
-    //       $btnText = "Premium";
-    //       $link = "";
-    //     break;
-    //     case 1:
-    //       $btnColor = "blue";
-    //       $btnText = "Standard";
-    //       $link = "hide";
-    //     break;
-    //   }
-         
-    // }
+    
 
     public function hydrate(array $data)
     {
