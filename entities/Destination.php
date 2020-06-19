@@ -113,5 +113,11 @@ class Destination
       $this->id_tour_operator = $id_tour_operator;
     }
   }
+  public function destinationExist()
+  {
+    if ($this->getLocation()== $_POST['location'] AND $this->getId_tour_operator() == $_POST['id_tour_operator']){
+     return true;
+    }
+  }
 
 }

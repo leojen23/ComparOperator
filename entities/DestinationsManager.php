@@ -6,7 +6,7 @@ class DestinationsManager extends Manager
      public function addDestination($Destination)
   {
    
-    $request = $this->db->prepare('INSERT INTO destinations (location, price,card_pic,  parallax_1,parallax_2,id_tour_operator) 
+    $request = $this->getDb()->prepare ('INSERT INTO destinations(location, price,card_pic,  parallax_1,parallax_2,id_tour_operator) 
                                   VALUES(:location, :price,:card_pic,:parallax_1,:parallax_2,:id_tour_operator)');
     $request->bindValue(':location', $Destination->getLocation());
     $request->bindValue(':price', $Destination->getPrice());
@@ -16,15 +16,7 @@ class DestinationsManager extends Manager
     $request->bindValue(':id_tour_operator', $Destination->getId_tour_operator());
     $request->execute();
     
-    // $Destination->hydrate([
-    //   'id' => $this->db->lastInsertId(),
-    //   'location' => ,
-    //   'price' => ,
-    //   'card_pic' => ,
-    //   'parallax_1' => ,
-    //   'parallax_2' => ,
-    //   'id_tour_operator' => ,
-    // ]);
+    
   }
 
 
@@ -41,7 +33,7 @@ class DestinationsManager extends Manager
     while($destinationsCardContent = $request->fetch(PDO::FETCH_ASSOC)){
 
      array_push($destinationCards, new Destination($destinationsCardContent)) ;
-
+      
     };
     return $destinationCards;
     
@@ -81,5 +73,27 @@ class DestinationsManager extends Manager
 
   }
 
+  public function getCarouselPics(){
 
-}
+    $request = $this->getDb()->query("SELECT
+                                    `parallax_1`
+                                FROM
+                                    `destinations`
+                                GROUP BY `location`");
+    $carouselPics = [];
+    $rawCarouselPics = $request->fetchAll(PDO::FETCH_ASSOC);
+   
+    foreach($rawCarouselPics as $rawCarouselPic){
+
+      array_push($carouselPics , new Destination ($rawCarouselPic));
+// echo "<pre>". var_export($carouselPics, true) . "</pre>";
+    }
+    return $carouselPics;
+     
+    
+    }
+  }
+
+  
+
+

@@ -1,5 +1,27 @@
 
-<?php include "../partials/head.php"?>
+<?php 
+require '../helpers/init.php';
+
+// include "../helpers/autoload.php";
+
+
+function loadClass($classe)
+{
+    require_once ('../entities/'.$classe.'.php') ;
+    
+}
+spl_autoload_register('loadClass');
+
+$DestinationsManager = new DestinationsManager($db);
+$OperatorsManager = new OperatorsManager($db);
+$OperatorIds = $OperatorsManager->rawsOperators();
+$standardOperators=$OperatorsManager->getStandardOperators();
+
+// echo "<pre>". var_export($OperatorIds, true) . "</pre>";
+
+
+include "../partials/head.php"
+?>
 <a href="../index.php" class="brand-logo center">Logo</a>
 <body>
 
@@ -20,7 +42,7 @@
     <div id="test1" class="col s12">
         <div class="row">
           <div class="container">
-            <form action="adminForm.php" method="POST" class="col s12">
+            <form action="/data/adminForm.php" method="POST" class="col s12">
               <div class="row">
 
                 <div class="input-field col s12">
@@ -41,7 +63,7 @@
                   </div>
                   
                   <div class = "file-path-wrapper"> 
-                     <input class = "file-path validate" type = "text" placeholder="Logo" name="file"/>
+                     <input class = "file-path validate" type = "text" placeholder="Logo" name="logo"/>
                   </div>
                </div>
 
@@ -49,13 +71,13 @@
               <div class="input-field col sm12">
                 <div class="checkbox-container">
                   <label>
-                    <input type="checkbox" name="standard" />
+                    <input type="checkbox" name="is_premium" value="0"/>
                     <span>Standard</span>
                   </label>
                 
 
                   <label>
-                    <input type="checkbox" name="Premium" />
+                    <input type="checkbox" name="is_premium" value="1"/>
                     <span>Premium</span>
                   </label>
                 </div>
@@ -89,17 +111,19 @@
     <div id="test2" class="col s12">
       <div class="row">
         <div class="container">
-          <form action="adminForm.php" method="POST" class="col s12">
+          <form action="/data/adminForm.php" method="POST" class="col s12">
             <div class="row">
               <div class="input-field col s12">
-                <select>
+                <select name="id_tour_operator">
                   <option value="" disabled selected>Choisissez l'identifiant de l'opérateur </option>
-                  <option name="id_operator_destination" value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
+                  <?php foreach($OperatorIds as $OperatorId):?>
+                  <option  value="<?=$OperatorId->getId()?>"><?=$OperatorId->getId()?></option>
+                  <?php endforeach;?>
                 </select>
                 <label>Numéro Tour opérateur</label>
               </div>
+              
+             
 
               <div class="input-field col s12">
                 <input id="name" name="location" type="text" class="validate">
@@ -119,7 +143,7 @@
                 </div>
                 
                 <div class = "file-path-wrapper"> 
-                    <input class = "file-path validate" type = "text" placeholder="Image Destination" name="cardpic"/>
+                    <input class = "file-path validate" type = "text" placeholder="Image Destination" name="card_pic"/>
                 </div>
               </div>
               <div class = "file-field input-field col s12">
@@ -129,7 +153,7 @@
                 </div>
                 
                 <div class = "file-path-wrapper"> 
-                    <input class = "file-path validate" type = "text" placeholder="Image Parallax1" name="parallax_1"/>
+                    <input class = "file-path validate" type = "text" placeholder="Image Parallax_1" name="parallax_1"/>
                 </div>
               </div>
               <div class = "file-field input-field col s12">
@@ -161,40 +185,29 @@
   <div id="test3" class="col s12">
     <div class="row">
         <div class="container">
-          <form action="adminForm.php" method="POST" class="col s12">
+          <form action="/data/adminForm.php" method="POST" class="col s12">
             <div class="row">
               <div class="input-field col s12">
-                <select>
-                  <option value="" disabled selected>Choisissez votre tour opérateur </option>
-                  <option name="id_operator_destination" value="easy jet">Easy jet</option>
-                  <option value="toto">toto</option>
-                  <option value="tata">tata</option>
+                <select name="nameStandardOperator">
+                  <option value="" disabled selected>Choisissez le nom de l'operateur </option>
+                  <?php foreach($standardOperators as $standardOperator):?>
+                  <option  value="<?=$standardOperator->getName()?>"><?=$standardOperator->getName()?></option>
+                  <?php endforeach;?>
                 </select>
-                <label>Nom du Tour opérateur</label>
+                <label>Nom des opérateurs Standard</label>
               </div>
-              <div>
-                <input type="hidden"name="idoperator">
-              </div>
+              
+            </div>
+                      <!-- Switch -->
+            <div class="switch">
+              <label>
+                Standard
+                <input type="checkbox" name ="switch" value="1">
+                <span class="lever"></span>
+                Premium
+              </label>
             </div>
             
-            <div class="row">
-              <div class="col s12 m5">
-                <div class="card-panel teal grey">
-                  <input type="text" name="status">
-                  <label for="typestatus">affiche le statut actuel</label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                  <select>
-                    <option value="" disabled selected>Devenir premium </option>
-                    <option name="id_operator_destination" value="easy jet">Premium</option>
-                    
-                  </select>
-                  <label>Nom du Tour opérateur</label>
-              </div>
-            </div>
             <div>
               <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
               <i class="material-icons right">send</i>

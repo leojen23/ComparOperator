@@ -6,7 +6,6 @@
 
 $DestinationsManager = new DestinationsManager($db);
 $destinationCards = $DestinationsManager->getDestinationsCardContent();
-
 ?>
 
 

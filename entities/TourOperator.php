@@ -62,6 +62,14 @@
   
    // SETTERS //
 
+   public function setId(int $id)
+  {
+    if(is_int($id))
+    {
+      $this->id = $id;
+    }
+  }
+
   public function setName($name)
   {
     if(is_string($name))

@@ -12,7 +12,6 @@ class OffersManager extends Manager
      var_dump("ppl");
     $request = $this->getDb()->prepare("SELECT
                                           *
-                                         
                                         FROM
                                             `tour_operators`
                                         INNER JOIN `destinations`
@@ -33,10 +32,6 @@ class OffersManager extends Manager
           
           array_push($offers, new Offer($rawOffer));
         }
-        // echo "<pre>". var_export($offersList, true) . "</pre>";
-      
     return $offers;
-   
-
   }
 }
