@@ -7,7 +7,7 @@
   <?php endforeach;?>
 </ul>
 <div>
-  <nav class="navbar-fixed">
+  <nav class="navbar-fixed ">
     <div class="nav-wrapper ">
       <a href="../index.php" class="brand-logo center">Logo</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>

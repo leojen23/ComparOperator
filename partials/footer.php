@@ -40,4 +40,3 @@
         </div>
     </div>
 </footer>
-<?php include "./partials/buttonAdmin.php"?>

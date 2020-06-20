@@ -51,13 +51,14 @@ if (isset($_POST['location']) AND isset($_POST['price']) AND isset($_POST['card_
     $destinations = new Destination($rawDestinations);
     // echo "<pre>". var_export($tourOperator, true) . "</pre>";
     $DestinationsManager= new DestinationsManager($db);
-    if($destinations->destinationExist()){
-        echo "cette destination est déjà existante pour votre tour opérateur!";
-        header('Location: ../views/admin.php');
+    // if($destinations->destinationExist()){
+    //     echo "cette destination est déjà existante pour votre tour opérateur!";
     
-    }else{
+    
+    // }else{
     $DestinationsManager->addDestination($destinations);
-    };
+        header('Location: ../views/admin.php');
+    // };
 
     // echo "<pre>". var_export($destinations->getLocation(), true) . "</pre>";
 }
