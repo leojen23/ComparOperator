@@ -4,8 +4,8 @@
 
 ?>
 
-<div class="container"> 
-    <div class="row" id="cardDestination">
+<div class="container"id="cardDestination"> 
+    <div class="row "id="cardDestination" >
     
         <?php foreach($destinationCards as $card):
            

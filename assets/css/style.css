@@ -12,13 +12,12 @@
 
 #cardDestination {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 #smallcard {
-  margin-right: 15px;
+  margin-right: 60px;
 }
 
 .socials-icons {
