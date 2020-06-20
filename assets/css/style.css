@@ -10,6 +10,17 @@
   padding-top: 10px;
 }
 
+#cardDestination {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#smallcard {
+  margin-right: 15px;
+}
+
 .socials-icons {
   display: flex;
   flex-direction: row;
