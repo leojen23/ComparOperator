@@ -15,7 +15,6 @@
         break;
       }?>
     
-
     <div class=" container col s12 ">
 
         <div class="card">
@@ -26,10 +25,8 @@
                     <img  src="../assets/images/logos/<?= $offer->getLogo()?>">
                 </div>
 
-
                 <div class="card-stacked">
                     <div class="card-content">
-
 
                         <div class="card-content-header">
                             <span class="card-title card-operator"><?= $offer->getName()?></span>
@@ -46,8 +43,10 @@
 
                         <div class="card-content-header">
                        
-                            <a href="<?= $offer->getLink()?>"><span class="card-span <?= $link?>"><?= $offer->getLink()?></span></a>
+                            <a href="<?= $offer->getLink()?>"><span class="card-span <?= $link?>">  <i class="material-icons">link</i>
+Visiter le site</span></a>
                         </div>
+
                     </div>
                 </div> 
 

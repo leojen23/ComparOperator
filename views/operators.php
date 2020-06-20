@@ -39,7 +39,8 @@ if(!empty($_GET["destinationName"])){
 
 <?php include "../partials/parallax.php"?>
 
-
+<?php include "../partials/footer.php"?>
+<?php include "../partials/buttonAdmin.php"?>
 
 
 <!-- END of body content ------------------------------------------------------------------------------------------>

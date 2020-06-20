@@ -72,10 +72,6 @@
   background-color: red;
 }
 
-body {
-  background-color: lightgray;
-}
-
 .checkbox.container {
   display: flex;
   justify-content: space-evenly;
@@ -85,6 +81,15 @@ body {
   display: flex;
   margin: auto 0.1rem;
   height: 100px;
+}
+
+.destination-heading {
+  color: white;
+  text-shadow: 0px 0px 2px black;
+  align-items: center;
+  font-size: 10rem;
+  font-weight: lighter;
+  margin: 30rem;
 }
 
 /*# sourceMappingURL=style.css.map */

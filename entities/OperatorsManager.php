@@ -37,7 +37,7 @@ class OperatorsManager extends Manager
                                     WHERE is_premium = 0");
 
      $rawOperatorNames = $request->fetchAll(PDO::FETCH_ASSOC);
-    echo "<pre>". var_export($rawOperatorNames, true) . "</pre>"; 
+    // echo "<pre>". var_export($rawOperatorNames, true) . "</pre>"; 
     $standardOperators = [];
    
     foreach( $rawOperatorNames as  $rawOperatorName){

@@ -9,7 +9,7 @@ class OffersManager extends Manager
   }
   public function getAllOffers($location){
   
-     var_dump("ppl");
+    
     $request = $this->getDb()->prepare("SELECT
                                           *
                                         FROM
@@ -21,9 +21,9 @@ class OffersManager extends Manager
 
 
     $request->bindValue(':location',$location, PDO::PARAM_STR);
-    // var_dump("ppl");
+    //
     $request->execute();
-    // var_dump("ppl");
+    //
    
     $rawOffers = $request->fetchAll(PDO::FETCH_ASSOC);
     $offers = [];
