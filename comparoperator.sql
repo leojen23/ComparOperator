@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : sam. 20 juin 2020 à 09:59
+-- Généré le : Dim 21 juin 2020 à 13:42
 -- Version du serveur :  5.7.24
 -- Version de PHP : 7.2.19
 
@@ -54,7 +54,7 @@ INSERT INTO `destinations` (`id`, `location`, `price`, `card_pic`, `parallax_1`,
 (21, 'Spain', 410, 'spain.jpg', 'Spain1.jpg', 'Spain2.jpg', 3),
 (22, 'Russie', 800, 'russia.jpg', 'Russia1.jpg', 'Russia2.jpg', 3),
 (23, 'Japon', 1200, 'japan.jpg', 'japan1.jpg', 'japan2.jpg', 7),
-(24, 'Madagascar', 1459, 'madagascar.jpg', 'Madagascar1.jpg', 'Madagascar2.jpg', 11);
+(25, 'Kenya', 1259, 'kenya.jpg', 'Kenya1.jpg', 'Kenya2.jpg', 5);
 
 -- --------------------------------------------------------
 
@@ -136,7 +136,7 @@ ALTER TABLE `tour_operators`
 -- AUTO_INCREMENT pour la table `destinations`
 --
 ALTER TABLE `destinations`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT pour la table `reviews`
