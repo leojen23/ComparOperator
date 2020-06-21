@@ -1,25 +1,71 @@
 
-.card-operator{
-    color: blue;
+
+
+
+.operator-card{
+    
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+    &-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-content{
+        padding: 1rem;
+    
+        &-header{
+            color: #323232;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-name{
+                
+                margin: 0;
+                font-weight: 200;
+                font-size: 2.3rem;
+            }
+            &-price{
+                margin: 0;
+                font-size: 2.1rem;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                font-weight: 100;
+                
+            }
+        }
+
+        &-destination{
+            &-name{
+                font-size:1.2rem;
+                color: #323232;;
+                
+            }
+            
+        }
+
+        &-footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            &-grade{
+                font-size: 2.5rem;
+            }
+            &-link{
+                display: inline-block;
+                
+            }
+        }
+    }
+    &-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
 }
-
-.card-content-header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-buttons-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.card-action-container{
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    background-color:red;
-}
-
-
-

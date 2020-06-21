@@ -25,6 +25,14 @@
   font-size: 1.2rem;
 }
 
+.section-parallax {
+  padding: 1rem;
+}
+
+.section-parallax h3 {
+  padding-bottom: 1rem;
+}
+
 .modal {
   text-align: center;
   width: 70%;
@@ -42,23 +50,57 @@
   color: white;
 }
 
-.card-operator {
-  color: blue;
+.operator-card {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
 }
-
-.card-content-header {
+.operator-card-logo {
   display: flex;
-  justify-content: space-between;
-}
-
-.card-buttons-container {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
 }
-
-.card-action-container {
-  background-color: red;
+.operator-card-content {
+  padding: 1rem;
+}
+.operator-card-content-header {
+  color: #323232;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.operator-card-content-header-name {
+  margin: 0;
+  font-weight: 200;
+  font-size: 2.3rem;
+}
+.operator-card-content-header-price {
+  margin: 0;
+  font-size: 2.1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 100;
+}
+.operator-card-content-destination-name {
+  font-size: 1.2rem;
+  color: #323232;
+}
+.operator-card-content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.operator-card-content-footer-grade {
+  font-size: 2.5rem;
+}
+.operator-card-content-footer-link {
+  display: inline-block;
+}
+.operator-card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .checkbox.container {
@@ -73,12 +115,14 @@
 }
 
 .destination-heading {
+  display: flex;
   color: white;
   text-shadow: 0px 0px 2px black;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
   font-size: 10rem;
   font-weight: lighter;
-  margin: 30rem;
+  margin-top: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
