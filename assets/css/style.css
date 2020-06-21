@@ -10,6 +10,16 @@
   padding-top: 10px;
 }
 
+#cardDestination {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#smallcard {
+  margin-right: 60px;
+}
+
 .socials-icons {
   display: flex;
   flex-direction: row;
@@ -101,6 +111,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+span .lever {
+  background-color: #ef5350;
+}
+
+.switch label input[type=checkbox]:checked + .lever {
+  background-color: #ef5350;
+}
+
+.switch label input[type=checkbox]:checked + .lever:after {
+  background-color: #ef5350;
+}
+
+[type=checkbox]:checked + span:not(.lever):before {
+  border-right: #ef5350 2px solid;
+  border-bottom: #ef5350 2px solid;
 }
 
 .checkbox.container {

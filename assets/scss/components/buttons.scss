@@ -1,0 +1,21 @@
+span{
+    .lever {
+    
+        background-color:#ef5350;
+    
+    }
+}
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #ef5350;
+}
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color:#ef5350;
+}
+[type="checkbox"]:checked+span:not(.lever):before{
+    border-right:#ef5350 2px solid;
+    border-bottom: #ef5350 2px solid;
+}
+
+
+
+

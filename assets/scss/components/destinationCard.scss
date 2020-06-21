@@ -8,3 +8,13 @@
 #imgcard{
     padding-top: 10px;
 }
+
+#cardDestination{
+       display :flex;
+       justify-content :space-around;
+       flex-wrap: wrap;
+    }
+
+#smallcard{
+    margin-right: 60px;
+}
