@@ -1,6 +1,8 @@
 <?php
+echo "greg";
   require './helpers/init.php';
   include "./helpers/autoload.php";
+  echo "grego";
 
 $DestinationsManager = new DestinationsManager($db);
 $destinationCards = $DestinationsManager->getDestinationsCardContent();
